@@ -85,9 +85,9 @@ while(b<100)
 // while(x<=a)
 // {
 // x++;
-// console.log(x);
+// console.log(x); 
 // }
-let x =0;
-do{
-console.log(x++)
-}while(x <10)
+// let x =0;
+// do{
+// console.log(x++)
+// }while(x <10)
