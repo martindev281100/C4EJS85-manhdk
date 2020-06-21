@@ -201,3 +201,66 @@
 // {
 //     alert('Phương trình có 1 nghiệm duy nhất');
 // }
+// console.log('Bài tập turtle: ');
+// console.log('A. Square:')
+// clear();
+// function square() {
+//     for (var i=1; i <= 4; i++) {
+//       fd(50)
+//       lt(90)
+//     }
+//   }
+// console.log('B. Triangle: ')
+// clear()
+// function triangle() {
+//   for (var i=1; i <= 3; i++) {
+//     fd(60)
+//     lt(120)
+//   }
+// }
+// triangle()
+// console.log('C. Pentagon: ')
+// clear();
+// function pentagon()
+// {
+//     for(var i =1; i<=5;i++)
+//     {
+//         fd(75),
+//         lt(72)
+//     }
+// }
+// pentagon();
+// console.log('D. Hexagon:')
+// clear()
+// function hexagon()
+// {
+//     for(var i =1; i<=6;i++)
+//     {
+//         fd(50),
+//         lt(60)
+//     }
+// }
+// function Polygon()
+// {
+//     let n =Number(prompt("Enter number: "));
+//     for(var i =1; i<=n;i++)
+//     {
+//         fd(50);
+//         lt(360/n);
+//     }
+// }
+// console.log('Bài tập optionals: ')
+// clear()
+// function Polygon()
+// {
+//   let n =Number(prompt("Enter number of polygon: "));
+//   for(var i= 1; i<=n;i++)
+//   {
+//     for(var x=1; x<=(i+2);x++)
+//     {
+//         fd(50);
+//         lt(360/(i+2));
+//     }
+//   }
+// }
+// Polygon();
