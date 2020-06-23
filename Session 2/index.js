@@ -4,11 +4,11 @@
 // console.log('3. Let vs Const: Biến Const chỉ được khai báo 1 lần và không thể thay đổi giá trị của nó.');
 // console.log('4. Var dùng khi muốn biến tồn tại bên ngoài scope. Let sử dụng khi cần sự chính xác và dễ đọc. Const dùng khi muốn một iến khônng thể thay đổi trong suốt thời gian')
 // console.log('Bai 2:');
-// console.log('1. Boolean là biểu thức chỉ có true và false');
+// console.log('1. Boolean là kiểu dữ liệu chỉ có true và false');
 // console.log('2. Boolean trả lại kiểu true hoặc false');
 // console.log('Bai 3:');
 // console.log('A. In số từ 1-7:');
-// for(let i =1; i<=7; i++)
+// for(let i =0; i<7; i++)
 // {
 //    console.log(i);
 // }
@@ -25,8 +25,8 @@
 //     console.log(x);
 // }
 // console.log('D. In dãy số do người dùng nhập số đầu và cuối (n và c):')
-// let n = prompt('Enter n: ')
-// let c = prompt('Enter c: ')
+// let n = prompt('Enter begin number: ')
+// let c = prompt('Enter end number: ')
 // for(let i= n; i<c; i++)
 // {
 //     console.log(i);
@@ -35,18 +35,15 @@
 // var n = prompt('Enter n: ')
 // var x = prompt('Enter c: ')
 // do{
-//     n++;
-//     n++;
-//     n++;
 //     console.log(n);
+//     n++;
+//     n++;
+//     n++;
 // }while (n<x);
 // console.log('F. In dãy số do người dùng nhập số đầu và cuối (n và c) có bước nhảy là s:')
-// var a = prompt('Enter n: ')
-// let n = Number(a);
-// var x = prompt('Enter c: ')
-// let c = Number(x)
-// var z = prompt('Enter S: ')
-// let s = Number(z);
+// var n = Number(prompt('Enter n: '));
+// var c = Number(prompt('Enter c: '));
+// var s = Number(prompt('Enter S: '));
 // do{
 //     n+=s;
 //     console.log(n);
@@ -54,7 +51,7 @@
 // console.log('4. Tính giai thừa đựa vào số nhập vào');
 // let a= Number(prompt('Enter factoriala number: ')) ;
 // let x=1;
-// for(var i = 1; i< a; i++)
+// for(var i = 1; i<=a; i++)
 // {
 //     x=x*i;
 // }
@@ -160,6 +157,7 @@
 //     }
 //     console.log(0);
 // }
+
 // console.log('Bài 10: Tính BMI:');
 // let weight = prompt('Enter Weight:');
 // let height = Number(prompt('Enter Height in cm: '))/100;
