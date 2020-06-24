@@ -157,6 +157,7 @@
 //     username = prompt('Register an username: ');
 //     if(username.length<=15)
 //     {
+//         alert('Good username');
 //         console.log(username);
 //         break;
 //     }
@@ -187,3 +188,216 @@
 //         console.log('Hahaha');
 //     }
 // }
+
+//console.log('HOMEWORK'):
+// console.log('Bài 1: Variable swap');
+// console.log('Cách 1: Sử dụng biến temporary');
+// let a = 5;
+// let b = 6;
+// let temp = a;
+// console.log(a,b);
+// a = b;
+// b = temp;
+// console.log(a,b);
+// console.log('Cách 2: Chỉ sử dụng 2 biến có sẵn');
+// let a = 5;
+// let b = 6;
+// console.log(a,b);
+// a = a+b;
+// b = a-b;
+// a = a-b;
+// console.log(a,b);
+
+// console.log('Bài 2: Split string into array');
+// const s = "Hello beauty there";
+// let a = s.split(" ");
+// console.log(a);
+
+// console.log('Bài 3: Using spread operator')
+// const a = [4, 5, 7, -8];
+// console.log(...a);
+
+// console.log('Bài 4: Write a script to simulate a clothes shop, asking and performing certain tasks from users');
+// let choice;
+// let selection;
+// var items= ['Jeans', 'T-shirt', 'Socks'];
+// while(true)
+// {
+//     choice = prompt('Hi there, welcome to the store, what do you want? (C, R, U, D-Capital letter only)?')
+//     selection  = ['C','R', 'U', 'D'];
+//     if(selection.includes(choice)== true)
+//     {
+//         if(choice == 'R')
+//         {
+//             for(let i = 0; i < items.length; i++)
+//             {
+//                 console.log((i+1)+'. '+items[i] );
+//             }
+//             break;
+//         }
+//         else if(choice == 'C')
+//         {
+//             let newItems= prompt('Enter new item: ');
+//             updatedItems= items.push(newItems);
+//             updatedItems = items;
+//             alert('Done');
+//         }
+//         else if(choice =='U')
+//         {
+//             let updateItemPlace = prompt('Enter the position you want to update: ');
+
+//                 let updateItem= prompt('Enter name of items to update: ');
+            
+//                 items[updateItemPlace]=updateItem;
+//                 alert('Done');
+            
+//         }
+//         else if (choice == 'D')
+//         {
+//             let deleteItemPlace = prompt('Enter the position you want to delete: ');
+//             items.splice(deleteItemPlace,1);
+//             alert('Done');
+//         }
+    
+//     }
+//     else{
+//         alert('This command is not supported!');
+//     }
+// }
+
+// console.log('Bài 5:	Write a script to ask users enter a sequence of numbers, the Numbers are separated by commas, calculate the sum of the numbers and show it to users');
+
+// let string = prompt('Enter numbers(separated by commas):');
+// let number=(string.split(","));
+// let sum =0;
+// for(let i=0;i<number.length;i++)
+// {
+//     sum = sum+ Number(number[i]);
+// }
+// alert('The sum of them is '+ sum);
+
+// console.log('Bài 6: Write a script asking users to enter a sequence of numbers, the numbers are separated by commas, find the smallest number and log it out to users');
+
+// let string = prompt('Enter numbers(separated by commas):');
+// let number=string.split(",");
+// let numberArr=[];
+// for(let i = 0; i<number.length; i++)
+// {
+//     numberArr.push(Number(number[i]));
+//     console.log(numberArr);
+// }
+// console.log(Math.min(...numberArr));
+
+// console.log('Bài 7:')
+// let number = Number(prompt('Enter number to search in array: '));
+// const arr = [3, 4, 6, -9, 10, -88, 2];
+// while(true)
+// {
+//     for(let i = 0; i<arr.length; i++)
+//     {
+//         if(number == [arr[i]])
+//         {
+//             alert(number+ " is Found in array at index "+ i);
+//         }
+//         break;
+//     }
+//     alert(number + " cannot found in array");
+//     break;
+// }
+
+// console.log('Bài 8:');
+// console.log('8.1: log size of sheep to screen');
+// const flock = [5, 7, 300, 90, 24, 50, 75];
+// console.log('My sheep size: \n'+ flock);
+
+// console.log('8.2: Find max ');
+// let max = Math.max(...flock);
+// console.log('My biggest sheep: '+ max);
+
+// console.log('8.3: Set default size');
+// let index = flock.indexOf(max);
+// flock[index] = 8;
+// console.log('My sheep size: \n'+ flock);
+
+// console.log('8.4: flock growing by 50');
+// console.log('Month 1: ')
+// for(let i = 0; i<flock.length; i++)
+// {
+//     flock[i]=flock[i]+50;
+// }
+// console.log('After 1 month....');
+// console.log('My sheep size: \n'+ flock);
+// max = Math.max(...flock);
+// index = flock.indexOf(max);
+// flock[index] = 8;
+// console.log('My sheep size after shave: \n'+ flock);
+
+// console.log('8.5: flock growing in 3 months');
+// console.log('Month 2: ')
+// for(let i = 0; i<flock.length; i++)
+// {
+//     flock[i]=flock[i]+50;
+// }
+// console.log('After 2 month....');
+// console.log('My sheep size: \n'+ flock);
+// max = Math.max(...flock);
+// index = flock.indexOf(max);
+// flock[index] = 8;
+// console.log('My sheep size after shave: \n'+ flock);
+
+// console.log('Month 3: ')
+// for(let i = 0; i<flock.length; i++)
+// {
+//     flock[i]=flock[i]+50;
+// }
+// console.log('After 3 month....');
+// console.log('My sheep size: \n'+ flock);
+
+
+// console.log('8.6: Calculate total size of flock and sell');
+// let sum = 0;
+
+// for (let i = 0; i<flock.length; i++)
+// {
+//     sum = sum+flock[i];
+// }
+// console.log('Total size of flock: '+ sum);
+// console.log('I would receive: '+ sum*2+"$")
+
+// console.log('Bài 10: ')
+// let names = prompt('Enter names: ');
+// nameArr = names.split(',');
+// let newArr=[];
+// for(let i = 0; i<nameArr.length; i++)
+// {
+//     newArr.push("<"+nameArr[i]+">");
+// }
+// alert(nameArr+ " => "+newArr);
+
+// console.log('Bài 11:');
+// let number = prompt('Enter sequence of numeber: ');
+// let numberArr = number.split(',');
+// let oddArr = [];
+// for(let i = 0; i<numberArr.length; i++)
+// {
+//     if(numberArr[i]%2!=0)
+//     {
+//         oddArr.push(numberArr[i]);
+//     }
+// }
+// console.log(numberArr+ " => "+oddArr);
+// console.log('Turtle Exercise');
+// clear();
+// function square() {
+// var colors = ["red", "gray", "blue", "purple", "cyan"];
+//   for(var x=1; x<=4; x++)
+//   {
+//     for (var i=1; i <= 4; i++) {
+//       color(colors[x]);
+//     fd(50*x)
+//     rt(90)
+//   }
+//   }
+  
+// }
+// square()
