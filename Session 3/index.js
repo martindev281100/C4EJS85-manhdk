@@ -151,11 +151,11 @@
 // }
 
 // console.log('Exercise of while: Write a script asking users their username, if the entered username is too long (>15 characters), tell them that and ask them to re-enter a new username, if the username is short enough (<=15 characters), tell them it is good.')
-// let username;
+// let userName;
 // while(true)
 // {
-//     username = prompt('Register an username: ');
-//     if(username.length<=15)
+//     userName = prompt('Register an username: ');
+//     if(userName.length<=15)
 //     {
 //         alert('Good username');
 //         console.log(username);
@@ -265,6 +265,7 @@
 //     }
 // }
 
+
 // console.log('Bài 5:	Write a script to ask users enter a sequence of numbers, the Numbers are separated by commas, calculate the sum of the numbers and show it to users');
 
 // let string = prompt('Enter numbers(separated by commas):');
@@ -309,7 +310,16 @@
 // console.log('8.1: log size of sheep to screen');
 // const flock = [5, 7, 300, 90, 24, 50, 75];
 // console.log('My sheep size: \n'+ flock);
-
+// let max=flock[0];
+// for(let i =1; i<flock.length;i++)
+// {
+//     if(max<flock[i])
+//     {
+//         max = flock[i];
+//     }
+    
+// }
+// console.log(max);
 // console.log('8.2: Find max ');
 // let max = Math.max(...flock);
 // console.log('My biggest sheep: '+ max);
@@ -374,6 +384,7 @@
 // }
 // alert(nameArr+ " => "+newArr);
 
+
 // console.log('Bài 11:');
 // let number = prompt('Enter sequence of numeber: ');
 // let numberArr = number.split(',');
@@ -387,17 +398,17 @@
 // }
 // console.log(numberArr+ " => "+oddArr);
 // console.log('Turtle Exercise');
-// clear();
-// function square() {
-// var colors = ["red", "gray", "blue", "purple", "cyan"];
-//   for(var x=1; x<=4; x++)
-//   {
-//     for (var i=1; i <= 4; i++) {
-//       color(colors[x]);
-//     fd(50*x)
-//     rt(90)
-//   }
-//   }
+clear();
+function square() {
+let colors = ["red", "gray", "blue", "purple", "cyan"];
+  for(let x=1; x<=4; x++)
+  {
+    for (let i=1; i <= 4; i++) {
+      color(colors[x]);
+    fd(50*x)
+    rt(90)
+  }
+  }
   
-// }
-// square()
+}
+square()
