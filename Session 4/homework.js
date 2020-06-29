@@ -1363,6 +1363,20 @@
 //         console.log('----------------------------------------')
 //     }
 // }
+// let taskStatus;
+// for(let i = 0; i <learningArr.length;i++)
+// {
+//     if(learningArr[i].complete==true)
+//     {
+//         taskStatus = "[x]";
+//         console.log(i+1+". "+ taskStatus+learningArr[i].name)
+//     }
+//     else
+//     {
+//         taskStatus = "[ ]";
+//         console.log(i+1+". "+ taskStatus+learningArr[i].name)
+//     }
+// }
 // //Unfinished
 
 // console.log('Bài 7: ');
