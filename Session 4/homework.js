@@ -1021,7 +1021,6 @@
 //             break;
 //         }
 //     }
-//     if (word != x) {
 //         let newExplanation = prompt('Cannot found ' + word + ' in dictionary! Leave your explanation: ');
 //         if (newExplanation == '') {
 //             alert('Please enter meaningful explanation! ');
@@ -1029,7 +1028,6 @@
 //             dictionary[word] = newExplanation;
 //             alert(word + ' has been contributed with your explanation!');
 //         }
-//     }
 //     console.log(dictionary);
 // }
 
@@ -1228,7 +1226,7 @@
 
 // console.log('Bài 5.5: ');
 // let products = [];
-// let product1={
+// let product1 = {
 //     Name: "Xiaomi portable charger 20000mah",
 //     Brand: "Xiaomi",
 //     Price: 428,
@@ -1236,7 +1234,7 @@
 //     Category: "Charger",
 //     Providers: ["Phukienzero", "Dientucc"],
 // }
-// let product2={
+// let product2 = {
 //     Name: "VSmart Active 1",
 //     Brand: "VSmart",
 //     Price: 5487,
@@ -1244,7 +1242,7 @@
 //     Category: "Phone",
 //     Providers: ["Tgdd", "Ddghn", "VhStore"],
 // }
-// let product3={
+// let product3 = {
 //     Name: "Iphone X",
 //     Brand: "Apple",
 //     Price: 21490,
@@ -1252,7 +1250,7 @@
 //     Category: "Phone",
 //     Providers: ["Tgdd"],
 // }
-// let product4={
+// let product4 = {
 //     Name: "Samsung Galaxy A9",
 //     Brand: "Samsung",
 //     Price: 8490,
@@ -1264,17 +1262,30 @@
 // products.push(product2);
 // products.push(product3);
 // products.push(product4);
-// console.log(products[1].Providers.indexOf("Tgdd"));
+// console.log(products[1].Providers[0]);
 // let searchString = prompt('Enter providers to search: ');
 // let searchArr = [];
-// for(let i = 0; i<products.length; i++)
-// {
-//     if(products[i].Providers.indexOf(searchString) != -1)
-//     {
-//         searchArr.push(products[i]);
+// for (let i = 0; i < products.length; i++) {
+//     for (let x = 0; x < products[i].Providers.length; x++) {
+//         if (products[i].Providers[x] == searchString) {
+//             searchArr.push(products[i]);
+//         }
 //     }
+//     // if(products[i].Providers.indexOf(searchString) != -1)
+//     // {
+//     //     searchArr.push(products[i]);
+//     // }
 // }
-// console.log(searchArr);
+// // console.log(searchArr);
+
+// console.log('--------------------------------------');
+// for (let i = 0; i < searchArr.length; i++) {
+//     console.log("#" + [i + 1] + ".");
+//     console.log(searchArr[i].Name);
+//     console.log(searchArr[i].Price);
+//     console.log(searchArr[i].Providers);
+//     console.log('--------------------------------------');
+// }
 
 // console.log("Bài 6: ");
 
