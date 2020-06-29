@@ -1277,54 +1277,81 @@
 // console.log(searchArr);
 
 // console.log("Bài 6: ");
+
 // console.log("Bài 6.1: ");
-// let frontEnd = {
-//     Html: "false",
-//     Css: "false",
-//     JsBasic: "false",
-//     NPM: "false",
-//     git: "false",
-// }
-// let count = 1;
-// for (let i in frontEnd) {
-//     console.log(count++ + ". " + i + "\n Complete: " + frontEnd[i]);
-// }
-// console.log("Bài 6.2: ");
 
 // let cmd = prompt("Enter command (New, Delete, Update, Complete): ");
-// let frontEnd = {
-//     Html: "false",
-//     Css: "false",
-//     JsBasic: "false",
-//     NPM: "false",
-//     git: "false",
+// let html = {
+//     name: "Html",
+//     complete: false,
 // }
-// let count =1;
+// let css = {
+//     name: "Css",
+//     complete: false,
+// }
+// let js = {
+//     name: "Basic of Javascript",
+//     complete: false,
+// }
+// let npm = {
+//     name: "Node Package Manager",
+//     complete: false,
+// }
+// let git = {
+//     name: "Git",
+//     complete: false,
+// }
+// let learningArr = [];
 
-// if (cmd == "new" || cmd == "New") {
-//     let newProp = prompt("Enter new task: ");
-//     frontEnd[newProp] = "false";
+// learningArr.push(html);
+// learningArr.push(css);
+// learningArr.push(js);
+// learningArr.push(npm);
+// learningArr.push(git);
+// console.log('----------------------------------------')
+// for (let i = 0; i < learningArr.length; i++) {
+//     console.log(i + 1 + '. ' + learningArr[i].name + "\nComplete: " + learningArr[i].complete);
+//     console.log('----------------------------------------')
+// }
 
-// } else if (cmd == "update" || cmd == "Update") {
-//     let index = prompt("Enter position: ");
-//     let updateContent = prompt("Enter new title: ");
-//     if (index == 1) {
-//         frontEnd.Html = updateContent;
-//     } else if (index == 2) {
-//         frontEnd.Css = updateContent;
-//     } else if (index == 3) {
-//         frontEnd.JsBasic = updateContent;
-//     } else if (index == 4) {
-//         frontEnd.NPM = updateContent;
-//     } else if (index == 5) {
-//         frontEnd.git = updateContent;
+// if (cmd == "New" || cmd == "new") {
+//     let newItem = prompt('Enter new task: ');
+//     newItem = {
+//         name: newItem,
+//         complete: false,
 //     }
-
+//     learningArr.push(newItem);
+//     for (let i = 0; i < learningArr.length; i++) {
+//         console.log(i + 1 + '.' + learningArr[i].name + "\nComplete: " + learningArr[i].complete);
+//         console.log('----------------------------------------')
+//     }
+// } else if (cmd == "Update" || cmd == "update") {
+//     let position = Number(prompt("Enter position: "));
+//     let item = learningArr[(position - 1)];
+//     let newContent = prompt("Enter new title: ");
+//     item.name = newContent;
+//     for (let i = 0; i < learningArr.length; i++) {
+//         console.log(i + 1 + '.' + learningArr[i].name + "\nComplete: " + learningArr[i].complete);
+//         console.log('----------------------------------------')
+//     }
+// } else if (cmd == "Complete" || cmd == "complete") {
+//     let position = Number(prompt("Enter position: "));
+//     let item = learningArr[(position - 1)];
+//     item.complete = true;
+//     for (let i = 0; i < learningArr.length; i++) {
+//         console.log(i + 1 + '.' + learningArr[i].name + "\nComplete: " + learningArr[i].complete);
+//         console.log('----------------------------------------')
+//     }
 // }
-// for (let i in frontEnd) {
-//     console.log(count++ + ". " + i + "\n Complete: " + frontEnd[i]);
+// else if(cmd == "Delete"||cmd == "delete")
+// {
+//     let position = Number(prompt("Enter position to delete: "));
+//     learningArr.splice((position-1),1);
+//     for (let i = 0; i < learningArr.length; i++) {
+//         console.log(i + 1 + '.' + learningArr[i].name + "\nComplete: " + learningArr[i].complete);
+//         console.log('----------------------------------------')
+//     }
 // }
-
 // //Unfinished
 
 // console.log('Bài 7: ');
@@ -1383,7 +1410,7 @@
 //   fd(pos.x);
 //   lt(90);
 //   fd(pos.y);
-  
+
 //   for(let i = 0; i<2; i++)
 //   {
 //     pendown();
@@ -1397,7 +1424,7 @@
 
 // console.log('Bài 10: ');
 // console.log('///')
-console.log('Bài 15: ');
+// console.log('Bài 15: ');
 // console.log('Bài 15.1: ');
 // let jobData = {
 //     hits: [
