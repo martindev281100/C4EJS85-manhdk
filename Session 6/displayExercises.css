@@ -1,0 +1,51 @@
+/* Exercises 1: */
+/* span {
+    background: red;
+    width: inherit;
+    display: block;
+}
+
+div {
+    background: blue;
+} */
+/* Exercise 2: */
+/* div{
+    background: red;
+    display: inline;
+  } */
+
+/* Exercise 3: */
+/* #span1 {
+    background: red;
+}
+
+#span2 {
+    background: yellow;
+    width: 500px;
+    display: inline-block;
+} */
+/* div {
+    background: wheat;
+    width: 400px;
+    border: 2px solid green;
+    box-sizing: content-box;
+} */
+/* #a>div {
+    background: wheat;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#a {
+    border: 1px solid black
+} */
+div{
+    width : 200px;
+    height : 200px;
+    font-size:2em;
+    background:wheat;
+    box-sizing: border-box;
+    padding-left: 200px;
+  }

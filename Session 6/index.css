@@ -1,0 +1,42 @@
+h1{
+    color: blue;
+}
+p{
+    background-color: red;
+}
+#first_h1{
+    text-decoration: underline;
+}
+.italic{
+    font-style: italic;
+}
+.white{
+    color: white;
+}
+[href]
+{
+    font-size: 50px;
+}
+[type = "password"]
+{
+    border: solid gray 2px;
+}
+nav a{
+    text-decoration: line-through;
+}
+nav>a{
+    color: white;
+}
+
+button:active{
+    background-color: green;
+}
+input:focus{
+    border: black solid 4px;
+}
+img{
+    width: 40%;
+}
+img:hover{
+    border: gray 3px solid;
+}

@@ -1,0 +1,28 @@
+.text-red {
+    color: red;
+}
+
+.div-color {
+    color: #00FF00;
+}
+
+.font-size {
+    font-size: 24px;
+}
+
+/* Exercise 5: */
+#div2 {
+    color: blue;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+.item>span {
+    font-size: 18px;
+}
+
+.item>div>span {
+    font-style: italic;
+}
