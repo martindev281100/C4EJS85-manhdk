@@ -96,16 +96,23 @@ console.log(items);
 let container = document.getElementById('itemList');
 console.log(container);
 for (let i = 0; i < items.length; i++) {
-    container.insertAdjacentHTML('beforeend', `<li>${items[i]}</li>`);
+    container.insertAdjacentHTML('beforeend', `<li>${items[i]}<button id="btnRemove">remove</button></li>`);
 }
 document.getElementById("ul-li1").remove();
 document.getElementById("ul-li2").remove();
 
 let btnAdd = document.getElementById("btnAdd");
-btnAdd.addEventListener('click',()=>{
+btnAdd.addEventListener('click', () => {
     let newItem = document.getElementById("inputItem").value;
     console.log(newItem);
     items.push(newItem);
     console.log(items);
-    container.insertAdjacentHTML('beforeend', `<li>${items[]}</li>`);
+    let lastItem = items[items.length - 1];
+    container.insertAdjacentHTML('beforeend', `<li>${lastItem}<button id="btnRemove">remove</button></li>`);
+    document.getElementById('inputItem').value = '';
+})
+
+let btnRemove = document.getElementById("btnRemove");
+btnRemove.addEventListener('click',()=>{
+    console.log(event.target);
 })
