@@ -96,7 +96,7 @@ console.log(items);
 let container = document.getElementById('itemList');
 console.log(container);
 for (let i = 0; i < items.length; i++) {
-    container.insertAdjacentHTML('beforeend', `<li>${items[i]}<button id="btnRemove">remove</button></li>`);
+    container.insertAdjacentHTML('beforeend', `<li id="${i}">${items[i]}<button class="btnRemove">remove</button></li>`);
 }
 document.getElementById("ul-li1").remove();
 document.getElementById("ul-li2").remove();
@@ -108,11 +108,21 @@ btnAdd.addEventListener('click', () => {
     items.push(newItem);
     console.log(items);
     let lastItem = items[items.length - 1];
-    container.insertAdjacentHTML('beforeend', `<li>${lastItem}<button id="btnRemove">remove</button></li>`);
+    let lastIndex = items.length - 1;
+    container.insertAdjacentHTML('beforeend', `<li id="${lastIndex}">${lastItem}<button class="btnRemove">remove</button></li>`);
     document.getElementById('inputItem').value = '';
+    console.log(btnRemove);
+
 })
 
-let btnRemove = document.getElementById("btnRemove");
-btnRemove.addEventListener('click',()=>{
-    console.log(event.target);
-})
+let btnRemove = document.getElementsByClassName('btnRemove');
+for (let i = 0; i < btnRemove.length; i++) {
+    btnRemove[i].addEventListener('click', () => {
+        console.log('remove' + ' index: ' + i);
+        items.splice(i,1);
+        let removeElement = document.getElementById(i);
+        removeElement.remove();
+        console.log(removeElement);
+        console.log(items);
+    })
+}
