@@ -118,11 +118,12 @@ btnAdd.addEventListener('click', () => {
 let btnRemove = document.getElementsByClassName('btnRemove');
 for (let i = 0; i < btnRemove.length; i++) {
     btnRemove[i].addEventListener('click', () => {
+        console.log(btnRemove.length);
         console.log('remove' + ' index: ' + i);
         items.splice(i,1);
         let removeElement = document.getElementById(i);
         removeElement.remove();
         console.log(removeElement);
         console.log(items);
-    })
+    });
 }
