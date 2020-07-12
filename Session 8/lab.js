@@ -247,30 +247,87 @@ let quote_data = [{
 //     quote_author.innerHTML = shuffle_quote.quoteAuthor;
 // })
 
-//Bai 4:
+// //Bai 4:
 
-let timeSheetData = [{
-        'project': 'Learn front-end',
-        'task': 'Learn HTML',
-        'time_spent': 6,
-    }, {
-        'project': 'Learn front-end',
-        'task': 'Learn CSS',
-        'time_spent': 8,
-    }, {
-        'project': 'Learn front-end',
-        'task': 'Learn JS Variables and Data Types',
-        'time_spent': 6,
-    },
-    {
-        'project': 'Learn git',
-        'task': 'Learn git basics',
-        'time_spent': 2,
-    },
-]
+// let timeSheetData = [{
+//         'project': 'Learn front-end',
+//         'task': 'Learn HTML',
+//         'time_spent': 6,
+//     }, {
+//         'project': 'Learn front-end',
+//         'task': 'Learn CSS',
+//         'time_spent': 8,
+//     }, {
+//         'project': 'Learn front-end',
+//         'task': 'Learn JS Variables and Data Types',
+//         'time_spent': 6,
+//     },
+//     {
+//         'project': 'Learn git',
+//         'task': 'Learn git basics',
+//         'time_spent': 2,
+//     },
+// ]
 
-console.log(timeSheetData);
-let time_sheet = document.getElementById('timeSheet');
-let tbody = document.getElementById('tbody_timesheet');
+// console.log(timeSheetData);
+// let time_sheet = document.getElementById("time_sheet");
 
-let row1 = tbody.insert
+// for (let i = 0; i < timeSheetData.length; i++) {
+//     let row0 = time_sheet.insertRow(-1);
+
+//     let cell0_1 = row0.insertCell(-1);
+//     let cell0_2 = row0.insertCell(-1);
+//     let cell0_3 = row0.insertCell(-1);
+//     let cell0_4 = row0.insertCell(-1);
+
+//     cell0_1.innerHTML = timeSheetData[i].project;
+//     cell0_2.innerHTML = timeSheetData[i].task;
+//     cell0_3.innerHTML = timeSheetData[i].time_spent;
+//     cell0_4.innerHTML = "<button id='delete_" + i + "'>delete</button>";
+
+// }
+
+
+// let tbody = document.getElementsByTagName('tbody');
+// console.log(tbody);
+
+// let input_project = document.getElementById('input_project');
+// let input_task = document.getElementById('input_task');
+// let input_time = document.getElementById('input_time');
+// let btn_add = document.getElementById('btn_add');
+// let deleteId_count = 5;
+// btn_add.addEventListener('click', () => {
+//     let newObj = {
+//         'project': input_project.value,
+//         'task': input_task.value,
+//         'time_spent': Number(input_time.value),
+//     }
+//     timeSheetData.push(newObj);
+//     console.log(timeSheetData)
+//     let row4 = time_sheet.insertRow(-1);
+
+//     let cell4_1 = row4.insertCell(-1);
+//     let cell4_2 = row4.insertCell(-1);
+//     let cell4_3 = row4.insertCell(-1);
+//     let cell4_4 = row4.insertCell(-1);
+
+//     cell4_1.innerHTML = timeSheetData[timeSheetData.length - 1].project;
+//     cell4_2.innerHTML = timeSheetData[timeSheetData.length - 1].task;
+//     cell4_3.innerHTML = timeSheetData[timeSheetData.length - 1].time_spent;
+//     cell4_4.innerHTML = "<button id='delete" + deleteId_count + "'>delete</button>";
+//     let btnDelete = document.getElementById('delete'+deleteId_count);
+//     btnDelete.addEventListener('click', function () {
+//         time_sheet.deleteRow(-1);
+//     })
+//     deleteId_count++;
+
+// })
+
+// for (let i = 0; i < timeSheetData.length; i++) {
+//     let btn_delete = document.getElementById('delete_' + i);
+//     btn_delete.addEventListener('click', function () {
+//         time_sheet.deleteRow(i);
+//     })
+// }
+    
+//Bai 5:

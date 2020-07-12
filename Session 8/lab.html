@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/index.css">
 </head>
+
 <body>
     <!-- <div>
         <button id="btn_add">+</button>    
@@ -31,34 +33,33 @@
 
         </table>
     </div> -->
-    <script src="lab.js"></script>
     <div class=".container">
-        <table id="timeSheet">
+        <div>
+            <span><input type="text" placeholder="Enter project" id="input_project"></span>
+            <span><input type="text" placeholder="Enter task" id="input_task"></span>
+            <span><input type="number" placeholder="Enter time spent" id="input_time"></span>
+            <button id="btn_add">Add</button>
+        </div>
+        <table  border="1px">
             <thead>
                 <tr>
                     <th>Project</th>
                     <th>Task</th>
                     <th>Time Spent</th>
+                    <th>Action</th>
                 </tr>
             </thead>
-            <tbody id="tbody_timesheet">
+            <tbody id="time_sheet">
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
             </tbody>
+
         </table>
     </div>
 </body>
+
+
+
+<script src="lab.js"></script>
+
 </html>
